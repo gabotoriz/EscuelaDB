@@ -13,7 +13,6 @@ public class MainApplication extends Application {
         Scene scene = new Scene(new Pane());
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.Selection);
-
         stage.setScene(scene);
         stage.show();
     }
