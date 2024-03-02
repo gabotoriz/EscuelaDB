@@ -18,7 +18,7 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class StudentsLocinController implements Initializable {
-    Switcher switcher = new Switcher();
+    Switcher switcher = Switcher.getInstance();
     PreparedStatement ps;
     Connection con;
     ResultSet rs;

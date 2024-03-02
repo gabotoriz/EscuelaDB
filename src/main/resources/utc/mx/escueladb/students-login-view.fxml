@@ -22,7 +22,7 @@
                 <Insets left="10.0" right="10.0" />
             </padding>
         </Label>
-        <VBox fx:id="VB_FormLogin" alignment="CENTER" layoutX="153.0" layoutY="215.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #333769;" styleClass="mfx-text-field">
+        <VBox fx:id="VB_FormLogin" alignment="CENTER" fillWidth="false" layoutX="153.0" layoutY="215.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #333769;" styleClass="mfx-text-field">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding>
@@ -63,7 +63,7 @@
                     <Font name="Rota-Regular" size="14.0" />
                 </font>
             </MFXButton>
-            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
                 <padding>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </padding>
@@ -92,7 +92,7 @@
                 <Insets left="10.0" right="10.0" />
             </padding>
         </Label>
-        <VBox fx:id="VB_FormLogin1" alignment="CENTER" layoutX="153.0" layoutY="215.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #333769; -fx-border-radius: 10px;" styleClass="mfx-text-field">
+        <VBox fx:id="VB_FormLogin1" alignment="CENTER" fillWidth="false" layoutX="153.0" layoutY="215.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #333769; -fx-border-radius: 10px;" styleClass="mfx-text-field">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding>
@@ -106,7 +106,7 @@
                     <Font name="Rota-Regular" size="14.0" />
                 </font>
             </Label>
-            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
                 <padding>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </padding>

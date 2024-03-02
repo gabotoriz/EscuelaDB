@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="utc.mx.escueladb.Controllers.SelectionController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #bc92c0;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="utc.mx.escueladb.Controllers.SelectionController">
+    <Pane layoutX="40.0" layoutY="48.0" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #0d0d38;">
+        <Label layoutX="349.0" layoutY="40.0" text="Universidad Tres Culturas" textFill="#f4d4f6">
+            <font>
+                <Font name="Rota-Regular" size="48.0"/>
+            </font>
+        </Label>
+        <Label layoutX="443.0" layoutY="122.0" text="Seleccione una opcion" textFill="#f4d4f6">
+            <font>
+                <Font name="Rota-Regular" size="34.0"/>
+            </font>
+        </Label>
+        <VBox alignment="CENTER" fillWidth="false" layoutX="469.0" layoutY="220.0" prefHeight="268.0"
+              prefWidth="262.0" spacing="15.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <MFXButton fx:id="MfxBtn_Administrador" prefHeight="50.0" prefWidth="170.0" rippleColor="#0d0d38"
+                       style="-fx-background-color: #5d5b9b;" text="Administrador" textFill="#f4d4f6">
+                <font>
+                    <Font name="Rota-Regular" size="20.0"/>
+                </font>
+            </MFXButton>
+            <MFXButton fx:id="MfxBtn_Estudiante" layoutX="10.0" layoutY="10.0" prefHeight="50.0"
+                       prefWidth="170.0" rippleColor="#0d0d38" style="-fx-background-color: #5d5b9b;"
+                       text="Estudiante" textFill="#f4d4f6">
+                <font>
+                    <Font name="Rota-Regular" size="20.0"/>
+                </font>
+            </MFXButton>
+            <MFXButton fx:id="MfxBtn_Profesor" layoutX="10.0" layoutY="33.0" prefHeight="50.0" prefWidth="170.0"
+                       rippleColor="#0d0d38" style="-fx-background-color: #5d5b9b;" text="Profesores"
+                       textFill="#f4d4f6">
+                <font>
+                    <Font name="Rota-Regular" size="20.0"/>
+                </font>
+            </MFXButton>
+        </VBox>
+    </Pane>
 </AnchorPane>

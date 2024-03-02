@@ -5,6 +5,13 @@ import utc.mx.escueladb.View;
 import static utc.mx.escueladb.ViewSwitcher.switchTo;
 
 public class Switcher {
+
+    private static Switcher instancia;
+
+    private Switcher() {
+
+    }
+
     //ADMINISTRADOR
     public void onAdmin() {
         switchTo(View.Admin);
@@ -40,4 +47,13 @@ public class Switcher {
     public void onList() {
         switchTo(View.List);
     }
+
+    public static Switcher getInstance() {
+        if (instancia == null) {
+            instancia = new Switcher();
+        }
+        return instancia;
+    }
+
+
 }
