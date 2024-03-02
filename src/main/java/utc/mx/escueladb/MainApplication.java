@@ -12,7 +12,7 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         Scene scene = new Scene(new Pane());
         ViewSwitcher.setScene(scene);
-        ViewSwitcher.switchTo(View.Login);
+        ViewSwitcher.switchTo(View.Selection);
 
         stage.setScene(scene);
         stage.show();

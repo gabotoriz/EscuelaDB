@@ -1,4 +1,4 @@
 package utc.mx.escueladb.Controllers;
 
-public class TeacherController {
+public class ListController {
 }

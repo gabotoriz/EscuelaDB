@@ -18,4 +18,6 @@ module utc.mx.escueladb {
     opens utc.mx.escueladb.Models to javafx.fxml;
     exports utc.mx.escueladb.Controllers.Login;
     opens utc.mx.escueladb.Controllers.Login to javafx.fxml;
+    exports utc.mx.escueladb.Controllers.Sections;
+    opens utc.mx.escueladb.Controllers.Sections to javafx.fxml;
 }
