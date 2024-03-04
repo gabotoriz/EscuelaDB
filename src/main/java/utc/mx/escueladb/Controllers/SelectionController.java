@@ -13,7 +13,7 @@ public class SelectionController {
     @FXML
     public MFXButton MfxBtn_Administrador, MfxBtn_Estudiante, MfxBtn_Profesor;
 
-    public void toAdminLogint() {
+    public void toAdminLogin    () {
         switcher.onLoginAdmin();
     }
 

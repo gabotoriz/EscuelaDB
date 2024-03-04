@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="utc.mx.escueladb.Controllers.Login.TeacherLoginController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: BC92C0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utc.mx.escueladb.Controllers.Login.TeacherLoginController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <Pane fx:id="P_Left" prefHeight="416.0" prefWidth="640.0" style="-fx-background-color: #0D0D38;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="0.0">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <Label layoutX="108.0" layoutY="53.0" prefHeight="134.0" prefWidth="424.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#f4d4f6" wrapText="true">
+            <font>
+                <Font name="Rota-Bold" size="48.0" />
+            </font>
+        </Label>
+        <VBox alignment="CENTER" fillWidth="false" layoutX="153.0" layoutY="215.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <Label text="Iniciar sesion" textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Regular" size="36.0" />
+                </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Label layoutX="10.0" layoutY="10.0" text="Usuario" textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Bold" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="JTF_Usuario" prefHeight="30.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets left="20.0" right="20.0" />
+                </VBox.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="30.0" text="Contraseña" textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Bold" size="18.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="KPF_Password" prefHeight="30.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets left="20.0" right="20.0" />
+                </VBox.margin>
+            </PasswordField>
+            <MFXButton fx:id="MfxBtn_IniciarSesionLeft" buttonType="RAISED" depthLevel="LEVEL5" prefHeight="33.0" prefWidth="125.0" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Iniciar sesion " textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Regular" size="14.0" />
+                </font>
+            </MFXButton>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Label text="¿Aun no tienes cuenta?" textFill="#f4daf6">
+                    <font>
+                        <Font name="Rota-Black" size="12.0" />
+                    </font>
+                </Label>
+                <MFXButton fx:id="MfxBtn_Registrar" buttonType="RAISED" depthLevel="LEVEL3" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Registrar" textFill="#f4daf6">
+                    <font>
+                        <Font name="Rota-Regular" size="14.0" />
+                    </font>
+                </MFXButton>
+            </HBox>
+        </VBox>
+    </Pane>
+    <Pane fx:id="P_Right" layoutX="10.0" layoutY="10.0" prefHeight="416.0" prefWidth="640.0" style="-fx-background-color: #0D0D38;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <Label layoutX="108.0" layoutY="53.0" prefHeight="134.0" prefWidth="424.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#f4d4f6" wrapText="true">
+            <font>
+                <Font name="Rota-Bold" size="48.0" />
+            </font>
+        </Label>
+        <VBox fx:id="VB_FormLogin1" alignment="CENTER" fillWidth="false" layoutX="143.0" layoutY="205.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #0d0d38;" styleClass="mfx-text-field">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <Label text="Registrarse" textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Regular" size="36.0" />
+                </font>
+            </Label>
+            <Label prefHeight="48.0" prefWidth="232.0" text="Por favor solicite al administrador que lo registre" textAlignment="CENTER" textFill="#f4daf6" wrapText="true">
+                <font>
+                    <Font name="Rota-Regular" size="14.0" />
+                </font>
+            </Label>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="48.0" prefWidth="325.0" spacing="10.0">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Label text="¿Ya tienes cuenta?" textFill="#f4daf6">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="Rota-Regular" size="14.0" />
+                    </font>
+                </Label>
+                <MFXButton fx:id="MfxBtn_IniciarSesion" buttonType="RAISED" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Iniciar sesion" textFill="#f4daf6">
+                    <font>
+                        <Font name="Rota-Regular" size="14.0" />
+                    </font>
+                </MFXButton>
+            </HBox>
+        </VBox>
+    </Pane>
 </AnchorPane>

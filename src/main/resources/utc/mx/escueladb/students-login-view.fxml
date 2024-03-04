@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="AP_Containt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #BC92C0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utc.mx.escueladb.Controllers.Login.StudentsLocinController">
-    <Pane fx:id="P_Left" prefHeight="832.0" prefWidth="640.0" style="-fx-background-color: #0d0d38;" styleClass="mfx-text-field" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="0.0">
-        <Label layoutX="108.0" layoutY="53.0" prefHeight="134.0" prefWidth="424.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#f4daf6" wrapText="true">
+<AnchorPane fx:id="AP_Containt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #BC92C0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utc.mx.escueladb.Controllers.Login.StudentsLoginController">
+    <Pane fx:id="P_Left" prefHeight="416.0" prefWidth="640.0" style="-fx-background-color: #0d0d38;" styleClass="mfx-text-field" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="0.0">
+        <Label alignment="CENTER" layoutX="108.0" layoutY="53.0" prefHeight="134.0" prefWidth="424.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#f4daf6" wrapText="true">
             <font>
                 <Font name="Rota-Bold" size="48.0" />
             </font>
@@ -37,7 +37,7 @@
                     <Font name="Rota-Bold" size="18.0" />
                 </font>
             </Label>
-            <TextField fx:id="JTF_Usuario" alignment="CENTER">
+            <TextField fx:id="JTF_Usuario" alignment="CENTER" promptText="Usuario">
                 <VBox.margin>
                     <Insets left="20.0" right="20.0" />
                 </VBox.margin>
@@ -50,7 +50,7 @@
                     <Font name="Rota-Bold" size="18.0" />
                 </font>
             </Label>
-            <PasswordField fx:id="JPF_Password" alignment="CENTER" prefWidth="200.0">
+            <PasswordField fx:id="JPF_Password" alignment="CENTER" prefHeight="30.0" prefWidth="200.0" promptText="Contraseña">
                 <VBox.margin>
                     <Insets left="20.0" right="20.0" />
                 </VBox.margin>
@@ -58,7 +58,7 @@
                     <Font name="Rota-Regular" size="18.0" />
                 </font>
             </PasswordField>
-            <MFXButton fx:id="MfxBtn_IniciarSesionLeft" alignment="CENTER" depthLevel="LEVEL3" onAction="#onIniciar" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Iniciar sesion" textFill="#f4daf6">
+            <MFXButton fx:id="MfxBtn_IniciarSesionLeft" alignment="CENTER" depthLevel="LEVEL3" onAction="#onIniciar" prefHeight="33.0" prefWidth="110.0" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Iniciar sesion" textFill="#f4daf6">
                 <font>
                     <Font name="Rota-Regular" size="14.0" />
                 </font>
@@ -82,8 +82,11 @@
                 </MFXButton>
             </HBox>
         </VBox>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
     </Pane>
-    <Pane fx:id="P_Right" layoutX="640.0" prefHeight="832.0" prefWidth="640.0" style="-fx-background-color: #0d0d38;" styleClass="mfx-text-field" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <Pane fx:id="P_Right" layoutX="640.0" prefHeight="416.0" prefWidth="640.0" style="-fx-background-color: #0d0d38;" styleClass="mfx-text-field" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <Label layoutX="108.0" layoutY="54.0" prefHeight="134.0" prefWidth="424.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#f4daf6" wrapText="true">
             <font>
                 <Font name="Rota-Bold" size="48.0" />
@@ -125,5 +128,11 @@
                 </MFXButton>
             </HBox>
         </VBox>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
     </Pane>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
 </AnchorPane>

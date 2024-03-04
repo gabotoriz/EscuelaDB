@@ -25,7 +25,7 @@ public class ViewSwitcher {
             if (cache.containsKey(view)) {
                 root = cache.get(view);
             } else {
-                root = load(Objects.requireNonNull(ViewSwitcher.class.getResource(view.getFileName())));
+                root = FXMLLoader.<Parent>load(Objects.requireNonNull(ViewSwitcher.class.getResource(view.getFileName())));
                 cache.put(view, root);
             }
             scene.setRoot(root);

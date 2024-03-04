@@ -8,7 +8,7 @@ public enum View {
     Students("students-view.fxml"),
     Teacher("teacher-view.fxml"),
     LoginAdmin("admin-login-view.fxm,l"),
-    LoginTeacher("teacher-admin-view.fxml"),
+    LoginTeacher("teacher-login-view.fxml"),
     Selection("selection-view.fxml");
 
 

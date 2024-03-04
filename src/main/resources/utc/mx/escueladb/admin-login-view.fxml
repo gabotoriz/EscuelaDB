@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="utc.mx.escueladb.Controllers.Login.AdminLoginController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
+<AnchorPane prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #0d0d38;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utc.mx.escueladb.Controllers.Login.AdminLoginController">
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #BC92C0;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="40.0">
+        <Label layoutX="123.0" layoutY="30.0" prefHeight="129.0" prefWidth="394.0" text="UNIVERSIDAD TRES CULTURAS" textAlignment="CENTER" textFill="#0d0d38" wrapText="true">
+            <font>
+                <Font name="Rota-Bold" size="48.0" />
+            </font>
+        </Label>
+        <VBox alignment="CENTER" fillWidth="false" layoutX="153.0" layoutY="175.0" prefHeight="402.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color: #0d0d38;">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <Label layoutX="149.0" layoutY="122.0" text="Administrador" textFill="#bc92c0">
+                <font>
+                    <Font name="Rota-Bold" size="36.0" />
+                </font>
+            </Label>
+            <Label text="Usuario" textFill="#bc92c0">
+                <font>
+                    <Font name="Rota-Bold" size="18.0" />
+                </font>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="200.0" promptText="JTF_Usuario" />
+            <Label text="Contraseña" textFill="#bc92c0">
+                <font>
+                    <Font name="Rota-Bold" size="18.0" />
+                </font>
+            </Label>
+            <MFXPasswordField fx:id="MFXPF_Password" prefWidth="200.0" />
+            <MFXButton fx:id="MFXBTN_InisiarSesion" rippleColor="#5d5b9b" style="-fx-background-color: #0d0d38;" text="Iniciar sesion" textFill="#f4daf6">
+                <font>
+                    <Font name="Rota-Regular" size="14.0" />
+                </font>
+            </MFXButton>
+        </VBox>
+    </Pane>
 </AnchorPane>
